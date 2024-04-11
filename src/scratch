@@ -1,0 +1,49 @@
+The Activity: Building a Zoo Management System
+In this activity, you will create a Zoo Management System that allows the user to create different types of animals, assign them to different habitats, and simulate various interactions within the zoo.
+Step 1: Set up the project
+1.	Create a new Java project in your preferred IDE.
+2.	Create a package structure to organize your classes.
+
+Step 2: Abstraction
+1.	Create an abstract class called Animal with the following attributes and methods:
+•	Attributes: name (String), age (int), weight (double)
+•	Abstract methods: makeSound(), eat(), sleep()
+
+Step 3: Interfaces
+1.	Create an interface called Flyable with the method fly().
+2.	Create an interface called Swimmable with the method swim().
+
+Step 4: Inheritance and Polymorphism
+1.	Create concrete subclasses of Animal that represent different types of animals, such as Mammal, Bird, Reptile, and Fish.
+2.	Implement the abstract methods from the Animal class in each subclass, providing specific behaviors for each animal type.
+3.	Implement the Flyable and Swimmable interfaces in the appropriate subclasses (e.g., Bird implements Flyable, Fish implements Swimmable).
+
+Step 5: Types of Inheritance
+1.	Implement single inheritance by creating a subclass of Mammal called Primate.
+2.	Implement hierarchical inheritance by creating subclasses of Primate called Ape and Monkey.
+3.	Implement multiple inheritance by creating an interface called Climber with a method climb(), and implement this interface in the Ape and Monkey classes.
+
+Step 6: User Input and Polymorphism
+1.	Create a ZooManager class with a main method.
+2.	In the main method, prompt the user to create different types of animals by entering their details (name, age, weight, and any other relevant information).
+3.	Based on the user's input, create instances of the appropriate animal subclasses using polymorphism.
+4.	Store the created animals in a collection (e.g., ArrayList).
+
+Step 7: Zoo Simulation
+1.	Create different types of habitats in your ZooManager class, such as Aviary, Aquarium, Savannah, and Jungle.
+2.	Assign the animals to their respective habitats based on their types and capabilities (e.g., birds to the aviary, fish to the aquarium, etc.).
+3.	Simulate various interactions within the zoo by calling the appropriate methods on the animal objects stored in the habitats (e.g., makeSound(), eat(), sleep(), fly(), swim(), climb()).
+
+Step 8: User Interaction and Output
+1.	Provide a menu-driven interface for the user to interact with the Zoo Management System.
+2.	Allow the user to perform actions such as:
+•	View all animals in the zoo
+•	View animals in a specific habitat
+•	Feed animals
+•	Simulate animal behavior (e.g., make sounds, fly, swim, climb)
+3.	Display the results of the user's actions and the simulated interactions within the zoo.
+
+Step 9: Testing and Debugging
+1.	Test your application thoroughly by creating various types of animals and simulating different scenarios.
+2.	Debug any issues that arise and ensure the application runs smoothly.
+
