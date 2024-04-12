@@ -104,11 +104,51 @@ public class ZooManager {
 
     private static void feedAnimals(ArrayList<Animal> animals) {
         System.out.println("Feeding animals...");
-        // Implement feeding logic here
+        if (animals.isEmpty()) {
+            System.out.println("No animals in the zoo.");
+            return;
+        }
+        for (Animal animal : animals) {
+            if (animal instanceof Mammal) {
+                ((Mammal) animal).feed();
+            } else if (animal instanceof Bird) {
+                ((Bird) animal).feed();
+            } else if (animal instanceof Fish) {
+                ((Fish) animal).feed();
+            } else if (animal instanceof Reptile) {
+                ((Reptile) animal).feed();
+            } else {
+                System.out.println("Unknown animal type. Unable to feed.");
+            }
+        }
     }
 
     private static void simulateAnimalBehavior(ArrayList<Animal> animals) {
         System.out.println("Simulating animal behavior...");
-        // Implement simulation logic here
+        if (animals.isEmpty()) {
+            System.out.println("No animals in the zoo to simulate.");
+            return;
+        }
+
+        System.out.println("Simulation begins:");
+        for (Animal animal : animals) {
+            System.out.println("Simulating " + animal.name + ":");
+            animal.makeSound();
+            animal.sleep();
+
+            if (animal instanceof Mammal) {
+                Mammal mammal = (Mammal) animal;
+                mammal.makeSound();
+            } else if (animal instanceof Bird) {
+                Bird bird = (Bird) animal;
+                bird.fly();
+            } else if (animal instanceof Fish) {
+                Fish fish = (Fish) animal;
+                fish.swim();
+            } else if (animal instanceof Reptile) {
+                Reptile reptile = (Reptile) animal;
+                reptile.swim();
+            }
+        }
     }
 }

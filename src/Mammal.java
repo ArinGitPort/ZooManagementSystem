@@ -17,4 +17,12 @@ public class Mammal extends Animal {
         System.out.println("I sleep mammal");
 
     }
+
+    public void feed(){
+        System.out.println("I eat");
+    }
+
+    public String toString() {
+        return "Animal [name=" + name + ", age=" + age + ", weight=" + weight + "]";
+    }
 }

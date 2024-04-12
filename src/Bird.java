@@ -21,4 +21,12 @@ public class Bird extends Animal implements Flyable {
     public void fly() {
         System.out.println("I fly");
     }
+
+    public void feed(){
+        System.out.println("I eat");
+    }
+
+    public String toString() {
+        return "Animal [name=" + name + ", age=" + age + ", weight=" + weight + "]";
+    }
 }

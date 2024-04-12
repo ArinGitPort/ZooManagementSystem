@@ -21,4 +21,13 @@ public class Fish extends Animal implements Swimmable {
     public void swim() {
         System.out.println("I swim");
     }
+
+    public void feed(){
+        System.out.println("I eat");
+    }
+
+    public String toString() {
+        return "Animal [name=" + name + ", age=" + age + ", weight=" + weight + "]";
+    }
 }
+
